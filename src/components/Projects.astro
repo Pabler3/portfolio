@@ -1,0 +1,196 @@
+---
+const { id } = Astro.props
+---
+
+<section id={id} class="body">
+    <h3 class="flex items-center w-full px-10">
+        <span class="flex-grow bg-slate-300 dark:bg-customWhite rounded h-1"></span>
+        <span class="mx-3 lg:text-5xl text-3xl font-bold text-slate-700 dark:text-customWhite">Proyectos</span>
+        <span class="flex-grow w-1/2 bg-slate-300 dark:bg-customWhite rounded h-1"></span>
+    </h3>
+    <div class="mx-4 py-16 flex flex-wrap justify-start">
+        <div class="slide-in-right mb-4 w-full lg:mx-8 md:flex lg:flex bg-darkWhite dark:bg-transparent items-center md:max-w-5xl lg:max-w-5xl md:h-72 lg:h-96 shadow-md shadow-customBlue rounded-lg relative">
+            <div class="w-full md:w-5/6 lg:w-1/2 relative">
+                <div class="h-full md:h-64 lg:h-auto rounded-lg overflow-hidden">
+                    <img src="/public/proyecto-click-nam.jpg" alt="Image" class="w-full h-full object-cover rounded-b-none md:rounded-l-md lg:rounded-l-md">
+                </div>
+            </div>
+            <div class="bg-white dark:bg-customGray bg-opacity-70 backdrop-blur-md py-2 px-2 md:px-4 lg:px-6 h-auto md:h-56 lg:h-72 md:max-w-xl lg:max-w-5xl w-full md:w-3/4 lg:w-1/2 rounded-t-none md:rounded-md lg:rounded-md relative md:ml-[-40px] lg:ml-[-40px] z-10">
+                <div class="flex justify-around space-x-2 md:space-x-2 lg:space-x-4 text-base md:text-base lg:text-xl">
+                    <span class="text-customBlue dark:text-customGreen">ANGULAR</span>
+                    <span class="text-customBlue dark:text-customGreen">JAVA</span>
+                    <span class="text-customBlue dark:text-customGreen">SPRING BOOT</span>
+                    <span class="text-customBlue dark:text-customGreen">MYSQL</span>
+                </div>
+                <h2 class="text-2xl md:text-base lg:text-3xl font-bold mt-3 text-slate-700 dark:text-white">Click & Ñam | Reservas</h2>
+                <p class="mt-2 text-lg md:text-sm lg:text-lg text-gray-500 dark:text-gray-300">
+                    Aplicación web para realizar reservas en restaurantes de una forma eficaz. Interfaz intuitiva y moderna con diseño 100% responsive.
+                </p>
+                <div class="mt-2 flex justify-end space-x-4">
+                    <span class="text-customBlue dark:text-customGreen text-base content-center">¡Échale un vistazo!</span>
+                    <a href="https://github.com/Pabler3/clicknamFront" class="p-2 rounded-lg flex items-center bg-customNoir border border-customGreen justify-center transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.582 0-.285-.01-1.04-.015-2.04-3.338.728-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.805 1.305 3.49.997.108-.775.417-1.305.76-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.47-2.38 1.235-3.22-.125-.305-.535-1.54.115-3.205 0 0 1.01-.323 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.29-1.23 3.29-1.23.65 1.665.24 2.9.12 3.205.77.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.815 1.1.815 2.22 0 1.605-.015 2.895-.015 3.29 0 .32.21.705.825.58C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>   
+                </div>
+            </div>
+        </div> 
+        <div class="slide-in-left mb-4 lg:ml-auto w-full md:flex lg:flex bg-darkWhite dark:bg-transparent justify-end items-center md:max-w-5xl lg:max-w-5xl md:h-72 lg:h-96 shadow-md shadow-customBlue rounded-lg relative">
+            <div class="w-full md:w-5/6 lg:w-1/2 relative">
+                <div class="h-full md:h-64 lg:h-auto rounded-lg overflow-hidden">
+                    <img src="/public/proyecto-garage.jpg" alt="Image" class="w-full h-full object-cover rounded-b-none md:rounded-l-md lg:rounded-l-md">
+                </div>
+            </div>
+            <div class="bg-white dark:bg-customGray bg-opacity-70 backdrop-blur-md py-2 px-2 md:px-4 lg:px-6 h-auto md:h-56 lg:h-72 md:max-w-xl lg:max-w-5xl w-full md:w-3/4 lg:w-1/2 rounded-t-none md:rounded-md lg:rounded-md relative md:ml-[-40px] lg:ml-[-40px] z-10">
+                <div class="flex justify-around space-x-2 md:space-x-2 lg:space-x-4 text-base md:text-base lg:text-xl">
+                    <span class="text-customBlue dark:text-customGreen">PHP</span>
+                    <span class="text-customBlue dark:text-customGreen">HTML</span>
+                    <span class="text-customBlue dark:text-customGreen">CSS</span>
+                    <span class="text-customBlue dark:text-customGreen">MYSQL</span>
+                </div>
+                <h2 class="text-2xl md:text-base lg:text-3xl font-bold mt-3 text-slate-700 dark:text-white">Club Motor Cafe Racer</h2>
+                <p class="mt-2 text-lg md:text-sm lg:text-lg text-gray-500 dark:text-gray-300">
+                    Aplicación web que nos permite entrar a un garage virtual para mostrar los vehiculos de cada socio del Club. 
+                    Realizamos CRUD sobre BD permitiendo al socio modificar/registrar vehiculos. Diseño vintage.
+                </p>
+                <div class="mt-2 flex justify-end space-x-4">
+                    <span class="text-customBlue dark:text-customGreen text-base content-center">¡Échale un vistazo!</span>
+                    <a href="https://github.com/Pabler3/EntornoServidor" class="p-2 rounded-lg flex items-center bg-customNoir border border-customGreen justify-center transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.582 0-.285-.01-1.04-.015-2.04-3.338.728-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.805 1.305 3.49.997.108-.775.417-1.305.76-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.47-2.38 1.235-3.22-.125-.305-.535-1.54.115-3.205 0 0 1.01-.323 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.29-1.23 3.29-1.23.65 1.665.24 2.9.12 3.205.77.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.815 1.1.815 2.22 0 1.605-.015 2.895-.015 3.29 0 .32.21.705.825.58C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>   
+                </div>
+            </div>
+        </div>
+        <div class="slide-in-right mb-4 w-full lg:mx-8 md:flex lg:flex bg-darkWhite dark:bg-transparent items-center md:max-w-5xl lg:max-w-5xl md:h-72 lg:h-96 shadow-md shadow-customBlue rounded-lg relative">
+            <div class="w-full md:w-5/6 lg:w-1/2 relative">
+                <div class="h-full md:h-64 lg:h-auto rounded-lg overflow-hidden">
+                    <video  class="w-full h-full object-cover rounded-b-none md:rounded-l-md lg:rounded-l-md" autoplay muted controls>
+                        <source src="/public/proyecto-javascrip.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-customGray bg-opacity-70 backdrop-blur-md py-2 px-2 md:px-4 lg:px-6 h-auto md:h-56 lg:h-72 md:max-w-xl lg:max-w-5xl w-full md:w-3/4 lg:w-1/2 rounded-t-none md:rounded-md lg:rounded-md relative md:ml-[-40px] lg:ml-[-40px] z-10">
+                <div class="flex justify-around space-x-2 md:space-x-2 lg:space-x-4 text-base md:text-base lg:text-xl">
+                    <span class="text-customBlue dark:text-customGreen">JAVASCRIPT</span>
+                    <span class="text-customBlue dark:text-customGreen">PHP</span>
+                    <span class="text-customBlue dark:text-customGreen">JQUERY</span>
+                    <span class="text-customBlue dark:text-customGreen">HTML</span>
+                    <span class="text-customBlue dark:text-customGreen">CSS</span>
+                </div>
+                <h2 class="text-2xl md:text-base lg:text-3xl font-bold mt-3 text-slate-700 dark:text-white">Space X</h2>
+                <p class="mt-2 text-lg md:text-sm lg:text-lg text-gray-500 dark:text-gray-300">
+                    Aplicación web realizada para el examen de entorno cliente en la Universidad Alfonso X El Sabio. Consta de peticiones AJAX-PHP, consumición
+                    API Pública, eventos, manipulación del BOM / DOM...
+                </p>
+                <div class="mt-2 flex justify-end space-x-4">
+                    <span class="text-customBlue dark:text-customGreen text-base content-center">¡Échale un vistazo!</span>
+                    <a href="https://github.com/Pabler3/EntornoCliente" class="p-2 rounded-lg flex items-center bg-customNoir border border-customGreen justify-center transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.582 0-.285-.01-1.04-.015-2.04-3.338.728-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.805 1.305 3.49.997.108-.775.417-1.305.76-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.47-2.38 1.235-3.22-.125-.305-.535-1.54.115-3.205 0 0 1.01-.323 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.29-1.23 3.29-1.23.65 1.665.24 2.9.12 3.205.77.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.815 1.1.815 2.22 0 1.605-.015 2.895-.015 3.29 0 .32.21.705.825.58C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>   
+                </div>
+            </div>
+        </div> 
+        <div class="slide-in-left mb-4 lg:ml-auto w-full md:flex lg:flex bg-darkWhite dark:bg-transparent justify-end items-center md:max-w-5xl lg:max-w-5xl md:h-72 lg:h-96 shadow-md shadow-customBlue rounded-lg relative">
+            <div class="w-full md:w-5/6 lg:w-1/2 relative">
+                <div class="h-full md:h-64 lg:h-auto rounded-lg overflow-hidden">
+                    <img src="/public/portfolio.jpg" alt="Image" class="w-full h-full object-cover rounded-b-none md:rounded-l-md lg:rounded-l-md">
+                </div>
+            </div>
+            <div class="bg-white dark:bg-customGray bg-opacity-70 backdrop-blur-md py-2 px-2 md:px-4 lg:px-6 h-auto md:h-56 lg:h-72 md:max-w-xl lg:max-w-5xl w-full md:w-3/4 lg:w-1/2 rounded-t-none md:rounded-md lg:rounded-md relative md:ml-[-40px] lg:ml-[-40px] z-10">
+                <div class="flex justify-around space-x-2 md:space-x-2 lg:space-x-4 text-base md:text-base lg:text-xl">
+                    <span class="text-customBlue dark:text-customGreen">ASTRO</span>
+                    <span class="text-customBlue dark:text-customGreen">TAILWIND CSS</span>
+                    <span class="text-customBlue dark:text-customGreen">VERCEL</span>
+            
+                </div>
+                <h2 class="text-2xl md:text-base lg:text-3xl font-bold mt-3 text-slate-700 dark:text-white">Mi Portfolio</h2>
+                <p class="mt-2 text-lg md:text-sm lg:text-lg text-gray-500 dark:text-gray-300">
+                    Espacio donde compartiré acerca de mí, donde muestro mi trayectoria en el sector IT hasta el momento y los proyecto personales que he desarrollado con diferentes tecnologías.
+                </p>
+                <div class="mt-2 flex justify-end space-x-4">
+                    <span class="text-customBlue dark:text-customGreen text-base content-center">¡Échale un vistazo!</span>
+                    <a href="https://github.com/Pabler3/EntornoServidor" class="p-2 rounded-lg flex items-center bg-customNoir border border-customGreen justify-center transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.263.82-.582 0-.285-.01-1.04-.015-2.04-3.338.728-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.805 1.305 3.49.997.108-.775.417-1.305.76-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.47-2.38 1.235-3.22-.125-.305-.535-1.54.115-3.205 0 0 1.01-.323 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.29-1.23 3.29-1.23.65 1.665.24 2.9.12 3.205.77.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.815 1.1.815 2.22 0 1.605-.015 2.895-.015 3.29 0 .32.21.705.825.58C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>   
+                </div>
+            </div>
+        </div>    
+    </div>     
+</section>
+
+<style>
+    @keyframes zoom {
+        from {
+            opacity: 0;
+            scale: 20%;
+        }
+
+        to {
+            opacity: 1;
+            scale: 100%;
+        }
+    }
+
+    .body {
+        view-timeline-name: --line;
+        view-timeline-axis: block;
+
+        animation-timeline: --line;
+        animation-name: zoom;
+
+        animation-range: entry 0% cover 30%;
+        animation-fill-mode: both;
+
+    }
+
+    .slide-in-right {
+        view-timeline-name: --proj;
+        view-timeline-axis: block;
+
+        animation-timeline: --proj;
+        animation-name: slide-in-right;
+
+        animation-range: entry 10% cover 50%;
+        animation-fill-mode: both;
+    }
+
+    .slide-in-left {
+        view-timeline-name: --proj;
+        view-timeline-axis: block;
+
+        animation-timeline: --proj;
+        animation-name: slide-in-left;
+
+        animation-range: entry 10% cover 50%;
+        animation-fill-mode: both;
+    }
+
+    @keyframes slide-in-right {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-left {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>

@@ -1,0 +1,42 @@
+---
+import '@fontsource-variable/recursive';
+import '@fontsource-variable/space-grotesk';
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/public/logo-dev.png">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body class="dark:bg-customDarkGreen">
+		<slot />
+		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+	</body>
+</html>
+<style is:global>
+	:root {
+		color-scheme: dark light;
+	}
+	html {
+		font-family: 'Space Grotesk Variable', sans-serif;
+		background-size: 224px;
+		background: #f1f3f5;
+		scroll-behavior: smooth;
+	}
+
+</style>

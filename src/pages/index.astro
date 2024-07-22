@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+	title="Pablo A. | Programador y desarrollador de aplicaciones web"
+	description="Desarrollador de aplicaciones web. Especializado en crear aplicaciones únicas. ">
+	<main id="header" class="dark:bg-customDarkGreen">
+		<Header />
+		<Hero />	
+		<Skills id="skills" />
+		<About id="about" />
+		<Projects id="projects" />
+		<Contact id="contact" />	
+		<Footer />
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: auto;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+</style>

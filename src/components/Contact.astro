@@ -1,0 +1,70 @@
+---
+const { id } = Astro.props
+---
+
+<section id={id} class="body">
+    <h3 class="flex items-center w-full px-10">
+        <span class="flex-grow w-1/2 bg-slate-300 dark:bg-customWhite rounded h-1"></span>
+        <span class="mx-3 lg:text-5xl text-3xl font-bold text-slate-700 dark:text-customWhite">Contacto</span>
+        <span class="flex-grow  bg-slate-300 dark:bg-customWhite rounded h-1"></span>
+    </h3>
+    <div class="w-full my-16">
+        <div class="relative">
+            <div class="mx-auto max-w-md px-4 sm:max-w-3xl md:max-w-xl lg:max-w-4xl lg:px-4">
+                <div class="relative rounded-2xl px-6 py-6 shadow-customBlue overflow-hidden shadow-lg sm:px-12 sm:py-20">
+                    <div class="relative sm:text-center flex flex-col">
+                            <div class="mx-auto max-w-lg">
+                                <svg height="35px" class="mb-2" fill="#178582" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
+                                    <g>
+                                        <g id="right_x5F_quote">
+                                            <g>
+                                                <path d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"></path>
+                                                <path d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="mt-2 text-base text-justify text-gray-500 dark:text-customWhite leading-6">
+                                    ¡ Gracias por dedicarle un tiempo a leer mi portfolio ! Si quiere que colaboremos juntos, tienes una recomendación o deseas más información
+                                    sobre mí, no dude en ponerse en contacto conmigo.
+                                </p>
+                                <div class="mt-10 flex justify-center">
+                                    <a href="mailto:pabloarcas89@gmail.com"  class="py-2 px-5 w-fit bg-customNoir border border-customGreen rounded-lg shadow-sm text-base content-center text-customWhite mx-auto transition-all duration-500 lg:mx-0">
+                                    Contáctame
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+    .body {
+        view-timeline-name: --line;
+        view-timeline-axis: block;
+
+        animation-timeline: --line;
+        animation-name: zoom;
+
+        animation-range: entry 0% cover 30%;
+        animation-fill-mode: both;
+
+    }
+    a {
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.689);
+    transition: box-shadow 0.25s;
+    }
+
+    a:hover {
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+    transform: translate(0, -5px);
+    transition: transform 0.3s ease-in-out;
+    }
+    
+
+</style>

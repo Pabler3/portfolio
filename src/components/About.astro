@@ -1,0 +1,122 @@
+---
+const { id } = Astro.props
+---
+
+<section id={id} class="body">
+    <h3 class="flex items-center w-full px-10">
+        <span class="flex-grow w-1/2 bg-slate-300 dark:bg-customWhite rounded h-1"></span>
+        <span class="mx-3 lg:text-5xl text-3xl font-bold text-slate-700 dark:text-customWhite">Sobre&nbsp;mí</span>
+        <span class="flex-grow bg-slate-300 dark:bg-customWhite rounded h-1"></span>
+    </h3>
+    <div class="flex items-top justify-center my-8 py-8 sm:items-center sm:pt-0">
+        <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
+            <div class="mt-8 overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <!-- Bloque izquierdo -->
+                    <div class="tabs lg:col-span-2 lg:content-center mb-4">
+                        <div class="md:flex">
+                            <ul class="flex-column transition-all duration-500 space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 mb-4 lg:mr-2 md:mb-0">
+                                <li>
+                                    <button class="inline-flex cursor-pointer items-center tablink px-4 py-3 active rounded-lg focus:bg-customGray focus:text-customNoir text-customWhite bg-customNoir hover:bg-customNoir/70 border border-customGreen w-full" data-tab="tabs-with-box-1" role="tab">
+                                        <svg class="w-5 h-5 mr-2 text-customWhite dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                                            <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
+                                        </svg>
+                                        Experiencia
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="inline-flex cursor-pointer items-center px-4 tablink py-3 rounded-lg focus:bg-customGray focus:text-customNoir text-customWhite bg-customNoir hover:bg-customNoir/70 border border-customGreen w-full" data-tab="tabs-with-box-2" role="tab">
+                                        <svg class="w-5 h-5 mr-2 text-customWhite dark:text-gray-400" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-school">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                                            <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                                        </svg>
+                                        Formación
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="inline-flex cursor-pointer items-center px-4 tablink py-3 rounded-lg focus:bg-customGray focus:text-customNoir text-customWhite bg-customNoir hover:bg-customNoir/70 border border-customGreen w-full" data-tab="tabs-with-box-3" role="tab">
+                                        <svg class="w-5 h-5 mr-2 text-customWhite dark:text-gray-400" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-certificate">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                            <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" />
+                                            <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" />
+                                            <path d="M6 9l12 0" /><path d="M6 12l3 0" /><path d="M6 15l2 0" />
+                                        </svg>
+                                        Certificaciones
+                                    </button>
+                                </li>
+                            </ul>
+                            <div id="tabs-with-box-1" role="tabpanel" aria-labelledby="tabs-with-box-item-1" class="tabcontent p-6 shadow-customBlue shadow-lg bg-darkWhite dark:bg-lightWhite text-medium text-gray-500 rounded-lg w-full max-h-64 lg:max-h-44 md:max-h-48 overflow-y-auto">
+                                <h3 class="text-lg font-bold text-gray-900">Junior Developer | Serbatic Albacete</h3>
+                                <ul class="text-base">
+                                    <li class="mb-2">Marzo 2024 - Junio 2024</li>
+                                    <li>Prácticas del FP Superior DAW desempeñando las funciones de desarrollo de software con Angular, Java + Spring Boot y MySQL para acceso a datos utilizando la metodología SCRUM. </li>
+                                </ul> 
+                            </div>
+                            <div id="tabs-with-box-2" role="tabpanel" aria-labelledby="tabs-with-box-item-2" class="hidden tabcontent p-6 shadow-customBlue shadow-lg bg-darkWhite dark:bg-lightWhite text-medium text-gray-500 rounded-lg w-full max-h-64 lg:max-h-44 md:max-h-48 overflow-y-auto">
+                                <h3 class="text-lg font-bold text-gray-900">FP Superio DAW | Universidad Alfonso X El Sábio</h3>
+                                <ul class="text-base">
+                                    <li class="mb-2">Septiembre 2022 - Junio 2024</li>
+                                    <li>Ciclo formativo de grado superior en Desarrollo de Aplicaciones Web que realice en la Universidad Alfonso X El Sábio que me sirvió para asentar las bases
+                                        de la programación y en el que obtuve un 9,15 de nota final. </li>
+                                </ul>  
+                            </div>
+                            <div id="tabs-with-box-3" role="tabpanel" aria-labelledby="tabs-with-box-item-3" class="hidden tabcontent p-6 shadow-customBlue shadow-lg bg-darkWhite dark:bg-lightWhite text-medium text-gray-500 rounded-lg w-full max-h-64 lg:max-h-44 md:max-h-48 overflow-y-auto">
+                                <h3 class="text-lg font-bold text-gray-900">Python Full Stack | IBM</h3>
+                                <ul class="text-base">
+                                    <li class="mb-2">Julio 2023</li>
+                                    <li>Curso Full Stack del lenguaje de programación Python que realice con IBM.</li>
+                                    <li>ID de la credencial: PLAN-FCD4093A8455.</li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bloque derecho -->
+                    <div class="border-l-4 border-customGreen lg:ml-2">
+                        <div class="lg:ml-2 flex items-center space-x-3 rtl:space-x-reverse">
+                            <h1 class="text-2xl pl-2 my-2 font-bold text-slate-700 dark:text-customWhite">
+                                Hola, soy <span class="bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 bg-[length:100%_3px] bg-no-repeat bg-bottom text-slate-700 dark:text-customWhite">Pablo Arcas</span> 
+                            </h1>
+                            <img src="../../public/logo-dev.png" class="h-11" alt="Logo dev" />
+                        </div>
+                        <p class="m-2 pl-2 text-slate-700 dark:text-customWhite">
+                            Soy un desarrollador innovador y trabajador. Cursé el Grado Superior en Desarrollo de Aplicaciones
+                            Web (DAW) y actualmente estoy trabajando como Freelance.
+                        </p>
+                        <p class="m-2 pl-2 text-slate-700 dark:text-customWhite">
+                           Quiero darte la bienvenida a este espacio donde iré compartiendo acerca de mí, de mi trayectoria profesional
+                           y de los proyectos que estoy desarrollando.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.body {
+    view-timeline-name: --line;
+    view-timeline-axis: block;
+
+    animation-timeline: --line;
+    animation-name: zoom;
+
+    animation-range: entry 0% cover 30%;
+    animation-fill-mode: both;
+
+}
+
+button {
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.689);
+    transition: box-shadow 0.25s;
+}
+
+button:hover {
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+    transform: translate(0, -5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+</style>
