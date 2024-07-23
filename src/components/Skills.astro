@@ -2,7 +2,7 @@
  const { id } = Astro.props
 ---
 
-<section id={id} class="body">
+<section id={id} data-aos="zoom-in">
     <h3 class="flex items-center w-full px-10">
         <span class="flex-grow bg-slate-300 dark:bg-customWhite rounded h-1"></span>
         <span class="mx-3 lg:text-5xl text-3xl font-bold text-slate-700 dark:text-customWhite">Tecnologías</span>
@@ -254,7 +254,7 @@
 
         animation-timeline: --line;
         animation-name: zoom;
-
+      
         animation-range: entry 0% cover 30%;
         animation-fill-mode: both;
 

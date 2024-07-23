@@ -3,6 +3,7 @@ import '@fontsource-variable/recursive';
 import '@fontsource-variable/space-grotesk';
 import { ViewTransitions } from 'astro:transitions';
 import  SpeedInsights  from "@vercel/speed-insights/astro";
+import "aos/dist/aos.css";
 
 interface Props {
 	title: string;
@@ -27,9 +28,14 @@ const { title, description } = Astro.props;
 	</head>
 	<body class="dark:bg-customDarkGreen">
 		<slot />
-		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+		<script>
+			import { aosInit } from "../js/aos";
+			aosInit();
+		</script>
 		<SpeedInsights/>
+		
 	</body>
 </html>
 <style is:global>

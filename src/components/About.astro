@@ -2,18 +2,18 @@
 const { id } = Astro.props
 ---
 
-<section id={id} class="body">
+<section id={id} data-aos="zoom-in">
     <h3 class="flex items-center w-full px-10">
         <span class="flex-grow w-1/2 bg-slate-300 dark:bg-customWhite rounded h-1"></span>
         <span class="mx-3 lg:text-5xl text-3xl font-bold text-slate-700 dark:text-customWhite">Sobre&nbsp;mí</span>
         <span class="flex-grow bg-slate-300 dark:bg-customWhite rounded h-1"></span>
     </h3>
-    <div class="flex items-top justify-center my-8 py-8 sm:items-center sm:pt-0">
+    <div class="flex items-top justify-center my-2 py-4 sm:items-center">
         <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
             <div class="mt-8 overflow-hidden">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
                     <!-- Bloque izquierdo -->
-                    <div class="tabs lg:col-span-2 lg:content-center mb-4">
+                    <div class="tabs lg:col-span-2 lg:content-center mb-4 pt-1.5">
                         <div class="md:flex">
                             <ul class="flex-column transition-all duration-500 space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 mb-4 lg:mr-2 md:mb-0">
                                 <li>

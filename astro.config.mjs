@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-
 import sitemap from "@astrojs/sitemap";
 import vercel from '@astrojs/vercel/static';
 
@@ -13,5 +12,5 @@ export default defineConfig({
   }),
 
   integrations: [tailwind(), sitemap()],
-  site: 'https://portfolio-astro-mauve-delta.vercel.app',
+  site: 'https://portfolio-pabloarcas.vercel.app',
 });

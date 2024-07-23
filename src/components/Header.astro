@@ -213,11 +213,33 @@ img:hover {
 </style>
 
 <script is:inline>
-  document.getElementById('dark-toggle').addEventListener('change', (event) => {
-    if (event.target.checked) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+    // Función para aplicar el tema basado en el localStorage
+    function applyTheme() {
+      const darkMode = localStorage.getItem('dark-mode') === 'true';
+      if (darkMode) {
+        document.documentElement.classList.add('dark');
+        document.getElementById('dark-toggle').checked = true;
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.getElementById('dark-toggle').checked = false;
+      }
     }
-  });
-</script>
+
+    // Función para cambiar el tema y guardar la preferencia en localStorage
+    function toggleTheme() {
+      const isChecked = document.getElementById('dark-toggle').checked;
+      if (isChecked) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('dark-mode', 'true');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('dark-mode', 'false');
+      }
+    }
+
+    // Aplica el tema al cargar la página
+    applyTheme();
+
+    // Maneja el cambio del interruptor
+    document.getElementById('dark-toggle').addEventListener('change', toggleTheme);
+  </script>
